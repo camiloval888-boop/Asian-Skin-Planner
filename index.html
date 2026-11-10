@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fff9f6">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Skin Planner">
+<title>Asian Skin Planner</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" type="image/png" href="./icons/favicon-32.png">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="app-shell">
+<header class="topbar">
+  <div class="brand"><div class="brand-mark">✿</div><div><strong>asian skin planner</strong><small>tu ritual, a tu ritmo</small></div></div>
+  <button class="icon-btn" id="guideBtn" aria-label="Abrir guía">ⓘ</button>
+</header>
+<main id="appMain">
+  <section class="view active" id="view-home"></section>
+  <section class="view" id="view-routine"></section>
+  <section class="view" id="view-products"></section>
+  <section class="view" id="view-agenda"></section>
+  <section class="view" id="view-progress"></section>
+</main>
+<nav class="bottom-nav" aria-label="Navegación principal">
+  <button class="nav-item active" data-view="home"><span>⌂</span>Inicio</button>
+  <button class="nav-item" data-view="routine"><span>✧</span>Mi rutina</button>
+  <button class="nav-item" data-view="products"><span>♧</span>Productos</button>
+  <button class="nav-item" data-view="agenda"><span>▦</span>Agenda</button>
+  <button class="nav-item" data-view="progress"><span>◷</span>Progreso</button>
+</nav>
+</div>
+<div id="modalRoot"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="./app.js"></script>
+</body>
+</html>
